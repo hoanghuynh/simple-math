@@ -1,5 +1,5 @@
 {
-  "name": "module-simple-math",
+  "name": "simple-math",
   "version": "1.0.0",
   "description": "A simple math lib (aka Hoang learns to node module)",
   "main": "./lib/index.js",
@@ -8,6 +8,7 @@
   },
   "keywords": [
     "math",
+    "test",
     "hoang"
   ],
   "devDependencies": {
