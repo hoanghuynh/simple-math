@@ -21,11 +21,12 @@ describe('area of', function() {
 
 		it('positive number returns correct value', function() {
 			var PI = Math.PI;
+			var EPSILON = 1e-8;
 			assert.equal(PI, math.getArea(1, 'circle'));
 			assert.equal(4 * PI, math.getArea(2, 'circle'));
 			assert.equal(64 * PI, math.getArea(8, 'circle'));
-			assert.equal(152.2756 * PI, math.getArea(12.34, 'circle'));
-			assert.equal(12435779.0736 * PI, math.getArea(3526.44, 'circle'));
+			assert.equal(true, Math.abs(math.getArea(12.34, 'circle') - 152.2756 * PI) < EPSILON);
+			assert.equal(true, Math.abs(math.getArea(3526.44, 'circle') - 12435779.0736 * PI) < EPSILON);
 		});
 	});
 
